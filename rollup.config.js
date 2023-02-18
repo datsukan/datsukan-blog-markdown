@@ -8,6 +8,11 @@ export default [
     input: "src/index.ts",
     output: [
       {
+        file: pkg.main,
+        format: "cjs",
+        sourcemap: false,
+      },
+      {
         file: pkg.module,
         format: "esm",
         sourcemap: false,
@@ -46,6 +51,11 @@ export default [
       "unified",
       "web-vitals",
     ],
+  },
+  {
+    input: "src/index.d.ts",
+    output: [{ file: "dist/cjs/index.d.ts", format: "cjs" }],
+    plugins: [dts.default()],
   },
   {
     input: "src/index.d.ts",
