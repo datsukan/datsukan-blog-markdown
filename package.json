@@ -1,6 +1,6 @@
 {
   "name": "datsukan-blog-react-markdown",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React component that renders from Markdown on datsukan-blog.",
   "keywords": [],
   "author": "datsukan",
