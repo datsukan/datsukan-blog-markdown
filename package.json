@@ -1,12 +1,12 @@
 {
   "name": "datsukan-blog-react-markdown",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "React component that renders from Markdown on datsukan-blog.",
   "keywords": [],
   "author": "datsukan",
   "license": "MIT",
   "main": "dist/cjs/index.ts",
-  "module": "dist/esm/index.ts",
+  "module": "dist/index.ts",
   "files": [
     "package.json",
     "README.md",

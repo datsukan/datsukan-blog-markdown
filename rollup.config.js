@@ -7,11 +7,11 @@ export default [
   {
     input: "src/index.ts",
     output: [
-      {
-        file: pkg.main,
-        format: "cjs",
-        sourcemap: false,
-      },
+      // {
+      //   file: pkg.main,
+      //   format: "cjs",
+      //   sourcemap: false,
+      // },
       {
         file: pkg.module,
         format: "esm",
@@ -52,14 +52,19 @@ export default [
       "web-vitals",
     ],
   },
+  // {
+  //   input: "src/index.d.ts",
+  //   output: [{ file: "dist/cjs/index.d.ts", format: "cjs" }],
+  //   plugins: [dts.default()],
+  // },
+  // {
+  //   input: "src/index.d.ts",
+  //   output: [{ file: "dist/esm/index.d.ts", format: "esm" }],
+  //   plugins: [dts.default()],
+  // },
   {
     input: "src/index.d.ts",
-    output: [{ file: "dist/cjs/index.d.ts", format: "cjs" }],
-    plugins: [dts.default()],
-  },
-  {
-    input: "src/index.d.ts",
-    output: [{ file: "dist/esm/index.d.ts", format: "esm" }],
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts.default()],
   },
 ]
