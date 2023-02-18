@@ -1,6 +1,6 @@
 import processor from "./processor"
 
-type Props = {
+export type Props = {
   text: string
 }
 

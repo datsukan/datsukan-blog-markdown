@@ -1,8 +1,4 @@
-import { ComponentStory } from "@storybook/react"
-import { Markdown as ArticleMarkdown } from "./article"
-import { Markdown as CommentMarkdown } from "./comment"
+import { Props as ArticleMarkdownProps } from "./article"
+import { Props as CommentMarkdownProps } from "./comment"
 
-type TypeArticleMarkdown = ComponentStory<typeof ArticleMarkdown>
-type TypeCommentMarkdown = ComponentStory<typeof CommentMarkdown>
-
-export type { TypeArticleMarkdown, TypeCommentMarkdown }
+export type { ArticleMarkdownProps, CommentMarkdownProps }
