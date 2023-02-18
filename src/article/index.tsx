@@ -1,9 +1,13 @@
 import processor from "./processor"
 
-export type Props = {
+type Props = {
   text: string
 }
 
 export const Markdown = ({ text }: Props) => {
-  return <div className="datsukan-blog-article-markdown">{processor.processSync(text).result}</div>
+  return (
+    <div className="datsukan-blog-article-markdown">
+      {processor.processSync(text).result}
+    </div>
+  )
 }
