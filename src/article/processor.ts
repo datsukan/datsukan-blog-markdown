@@ -11,8 +11,6 @@ import rehypeHighlight from "rehype-highlight"
 import rehypeSlug from "rehype-slug"
 import rehypeReact from "rehype-react"
 
-import "highlight.js/styles/atom-one-dark.css"
-
 import {
   NormalMessage,
   InfoMessage,
@@ -24,6 +22,8 @@ import { Codeblock } from "@component/Codeblock"
 import { Image } from "@component/Image"
 import { Header } from "@component/Header"
 import { Checkbox } from "@component/Checkbox"
+
+import "highlight.js/styles/atom-one-dark.css"
 
 const components: Record<string, any> = {
   h1: (props: any) => Header({ ...props, depth: 1 }),

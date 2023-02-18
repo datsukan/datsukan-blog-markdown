@@ -10,7 +10,7 @@ export type Props = {
 }
 
 export const Codeblock = ({ children }: Props) => {
-  if (!children || children.length === 0) return
+  if (!children || children.length === 0) return null
   // console.log(children)
 
   const className: string = children[0].props.className

@@ -7,7 +7,7 @@ export type Props = {
 
 export const Checkbox = ({ type, checked }: Props) => {
   const [isChecked, setIsChecked] = useState(checked)
-  if (type !== "checkbox") return
+  if (type !== "checkbox") return null
 
   return (
     <input
