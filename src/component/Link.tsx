@@ -13,7 +13,7 @@ export const Link = ({ href, title, children }: Props) => {
   const [isLoading, setIsLoading] = useState(true)
 
   if (children && children[0] && href === children[0]) {
-    const baseUrl = process.env.GATSBY_LINK_CARD_API_BASE_URL
+    const baseUrl = "https://iframe-link-card.vercel.app/"
 
     return (
       <>
