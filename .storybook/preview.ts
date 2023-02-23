@@ -1,3 +1,7 @@
+import "~/style/global.css"
+import "~/style/storybook.css"
+import "highlight.js/styles/atom-one-dark.css"
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {

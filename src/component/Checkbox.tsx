@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export type Props = {
   type: string
@@ -7,6 +7,13 @@ export type Props = {
 
 export const Checkbox = ({ type, checked }: Props) => {
   const [isChecked, setIsChecked] = useState(checked)
+
+  useEffect(() => {
+    if (isChecked !== checked) {
+      setIsChecked(checked)
+    }
+  }, [checked])
+
   if (type !== "checkbox") return null
 
   return (

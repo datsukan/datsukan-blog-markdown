@@ -17,16 +17,34 @@ module.exports = {
     "builder": "@storybook/builder-webpack5"
   },
   webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /\.(js|ts|tsx)$/,
-      use: [
-        {
-          loader: require.resolve('ts-loader'),
-        }
-      ]
-    })
+    config.module.rules = [
+      ...config.module.rules,
+      {
+        test: /\.(js|jsx|ts|tsx)$/,
+        use: [
+          {
+            loader: require.resolve('ts-loader'),
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                config: path.resolve(__dirname, "../postcss.config.js")
+              },
+            }
+          },
+        ],
+        include: path.resolve(__dirname, '../'),
+      },
+    ]
     config.resolve = {
-      extensions: [".ts", ".tsx", ".js", ".css", ".scss"],
+      ...config.resolve,
+      extensions: [".js", ".jsx", ".ts", ".tsx", ".css", ".scss"],
       fallback: {
         fs: false,
         crypto: false,
