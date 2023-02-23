@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { ImageModal } from "@component/ImageModal"
+import { ImageModal } from "~/component/ImageModal"
 
 export type Props = {
   src: string

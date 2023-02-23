@@ -2,8 +2,8 @@ import { ReactElement } from "react"
 import ReactDOMServer from "react-dom/server"
 import innerText from "react-innertext"
 
-import { CodeblockTitle } from "@component/CodeblockTitle"
-import { CodeblockCopyButton } from "@component/CodeblockCopyButton"
+import { CodeblockTitle } from "~/component/CodeblockTitle"
+import { CodeblockCopyButton } from "~/component/CodeblockCopyButton"
 
 export type Props = {
   children: ReactElement[]

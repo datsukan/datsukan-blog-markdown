@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { SkeletonLinkCard } from "@component/SkeletonLinkCard"
+import { SkeletonLinkCard } from "~/component/SkeletonLinkCard"
 
 export type Props = {
   href: string

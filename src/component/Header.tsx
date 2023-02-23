@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-import { HeaderAnchorLink } from "@component/HeaderAnchorLink"
+import { HeaderAnchorLink } from "~/component/HeaderAnchorLink"
 
 export type Props = {
   id: string

@@ -4,9 +4,9 @@ import remarkParser from "remark-parse"
 import remarkBreaks from "remark-breaks"
 import remarkGfm from "remark-gfm"
 import remarkDirective from "remark-directive"
-import remarkCustomDirective from "@plugin/remarkCustomDirective"
+import remarkCustomDirective from "~/plugin/remarkCustomDirective"
 import remarkRehype from "remark-rehype"
-import rehypeCodeTitle from "@plugin/rehypeCodeTitle"
+import rehypeCodeTitle from "~/plugin/rehypeCodeTitle"
 import rehypeHighlight from "rehype-highlight"
 import rehypeSlug from "rehype-slug"
 import rehypeReact from "rehype-react"
@@ -18,11 +18,11 @@ import {
   InfoMessage,
   WarnMessage,
   AlertMessage,
-} from "@component/Message"
-import { Link } from "@component/Link"
-import { Codeblock } from "@component/Codeblock"
-import { Image } from "@component/Image"
-import { Checkbox } from "@component/Checkbox"
+} from "~/component/Message"
+import { Link } from "~/component/Link"
+import { Codeblock } from "~/component/Codeblock"
+import { Image } from "~/component/Image"
+import { Checkbox } from "~/component/Checkbox"
 
 const components: Record<string, any> = {
   pre: Codeblock,

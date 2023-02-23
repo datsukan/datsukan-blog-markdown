@@ -10,9 +10,10 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@component/*": ["src/component/*"],
-      "@plugin/*": ["src/plugin/*"],
-      "@style/*": ["src/style/*"],
+      "~/component/*": ["src/component/*"],
+      "~/plugin/*": ["src/plugin/*"],
+      "~/style/*": ["src/style/*"],
+      // "~/*": ["src/*"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
