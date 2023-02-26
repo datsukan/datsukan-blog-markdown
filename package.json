@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.19.6",
     "@headlessui/react": "^1.7.11",
-    "@heroicons/react": "v1",
+    "@heroicons/react": "^2.0.16",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "@testing-library/jest-dom": "^5.16.5",

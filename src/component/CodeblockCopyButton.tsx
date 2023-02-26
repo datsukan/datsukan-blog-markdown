@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { DuplicateIcon } from "@heroicons/react/outline"
+import { DocumentDuplicateIcon } from "@heroicons/react/24/outline"
 
 export type Props = {
   className: string
@@ -49,7 +49,7 @@ export const CodeblockCopyButton = ({ className = "", text }: Props) => {
           コピーしました
         </span>
 
-        <DuplicateIcon className="block h-4 w-4" />
+        <DocumentDuplicateIcon className="block h-4 w-4" />
       </button>
     </div>
   )

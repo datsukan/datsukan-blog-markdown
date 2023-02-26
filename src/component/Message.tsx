@@ -4,8 +4,8 @@ import {
   InformationCircleIcon,
   ExclamationCircleIcon,
   XCircleIcon,
-  DotsCircleHorizontalIcon,
-} from "@heroicons/react/solid"
+  EllipsisHorizontalCircleIcon
+} from "@heroicons/react/24/solid"
 
 const baseClass = {
   block: "message-block flex items-center gap-4 rounded-md p-4",
@@ -20,7 +20,7 @@ export type Props = {
 export const NormalMessage = ({ children, className = "" }: Props) => {
   return (
     <div className={`bg-gray-100 ${baseClass.block} ${className}`}>
-      <DotsCircleHorizontalIcon className={`text-gray-500 ${baseClass.icon}`} />
+      <EllipsisHorizontalCircleIcon className={`text-gray-500 ${baseClass.icon}`} />
       <div className="w-full">{children}</div>
     </div>
   )

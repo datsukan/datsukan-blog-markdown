@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import { LinkIcon } from "@heroicons/react/solid"
+import { LinkIcon } from "@heroicons/react/24/solid"
 
 export type Props = {
   id: string
