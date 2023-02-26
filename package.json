@@ -1,6 +1,6 @@
 {
   "name": "datsukan-blog-markdown",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "module": "dist/index.ts",
   "types": "dist/index.d.ts",
   "dependencies": {
